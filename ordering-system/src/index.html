@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GET YOU - Your Online Marketplace</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Add CSS file here -->
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<!-- Add logo image here -->
+		</div>
+		
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Fashion</a></li>
+				<li><a href="#">Home & Garden</a></li>
+				<li><a href="#">Sports & Hobbies</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a routerLink="/login">Login</a></li>
+				<li><a routerLink="/register">Register</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="categories">
+		<h2>Categories</h2>
+		<ul>
+			<li><a href="#">Mobile Phones</a></li>
+			<li><a href="#">Computers & Laptops</a></li>
+			<li><a href="#">TV - Audio - Video</a></li>
+			<li><a href="#">Clothing</a></li>
+			<li><a href="#">Footwear</a></li>
+			<li><a href="#">Furniture</a></li>
+			<li><a href="#">Home Appliances</a></li>
+			<li><a href="#">Books - Sports - Hobbies</a></li>
+			<li><a href="#">Vehicles</a></li>
+			<li><a href="#">Real Estate</a></li>
+			<li><a href="#">Jobs</a></li>
+			<li><a href="#">Services</a></li>
+		</ul>
+	</section>
+	<section class="products">
+		<h2>Featured Products</h2>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="product1.jpg" alt="Product 1">
+					<h3>Product 1 Name</h3>
+					<p>Description of Product 1</p>
+					<span>Price: $100</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="product2.jpg" alt="Product 2">
+					<h3>Product 2 Name</h3>
+					<p>Description of Product 2</p>
+					<span>Price: $200</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="product3.jpg" alt="Product 3">
+					<h3>Product 3 Name</h3>
+					<p>Description of Product 3</p>
+					<span>Price: $300</span>
+    
+</body>
+<script>
+  // Select the login and sign-up buttons
+const loginBtn = document.querySelector('.login-btn');
+const signupBtn = document.querySelector('.signup-btn');
+
+// Add click event listeners to the buttons
+loginBtn.addEventListener('click', () => {
+  // Code to open login modal or redirect to login page
+});
+
+signupBtn.addEventListener('click', () => {
+  // Code to redirect to sign-up page
+});
+
+
+
+
+
+
+
+
+// Code for the search button
+const searchButton = document.querySelector('.search button');
+const searchInput = document.querySelector('.search input');
+
+searchButton.addEventListener('click', function() {
+  const searchValue = searchInput.value.trim();
+  if (searchValue !== '') {
+    alert(`Searching for ${searchValue}`);
+  }
+});
+
+// Code for the category links
+const categoryLinks = document.querySelectorAll('.categories a');
+
+categoryLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    const categoryName = this.textContent;
+    alert(`Showing ${categoryName} products`);
+  });
+});
+
+// Code for the product links
+const productLinks = document.querySelectorAll('.products a');
+
+productLinks.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    const productName = this.querySelector('h3').textContent;
+    alert(`Viewing ${productName}`);
+  });
+});
+</script>
+</html>
